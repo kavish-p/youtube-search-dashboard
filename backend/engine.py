@@ -1,8 +1,8 @@
 import sys, os, math
 from urllib.parse import urlparse, parse_qs
 from datetime import datetime, timedelta
-from utils import block_print, enable_print
-from sites.youtube import YouTubeChatDownloader
+from lib.utils import block_print, enable_print
+from lib.sites.youtube import YouTubeChatDownloader
 from tenacity import retry, stop_after_attempt, retry_if_exception_type
 from json.decoder import JSONDecodeError
 
